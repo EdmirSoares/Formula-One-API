@@ -46,8 +46,6 @@ Este projeto está licenciado sob a licença ISC.
 
 ## Créditos
 
-Ícones por [Pino Lamanna][dribble-icon]
-
 [typescript]: https://www.typescriptlang.org/
 [typescript-5-4]: https://www.typescriptlang.org/
 [ts-badge]: https://img.shields.io/badge/TypeScript-5.4-blue.svg
