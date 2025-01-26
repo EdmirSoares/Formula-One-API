@@ -1,37 +1,52 @@
 <div align="center">
-
-  <img src="./.github/assets/blue-saiyan-bg.png" alt="Logo" height="200">
-  <h1 align="center"><strong>NODE BOILERPLATE - BLUE EDITION</strong></h1>
-  <p align="center">
-	  Don't start a new Node project from zero!<br> Use this simple <b>Nodejs</b> boilerplate with pre-configured <b>Typescript</b> in a modern way.
-  </p>
-
-</div>
-
-<br />
-
-  <!-- Badges -->
-<div align="center">
   
   [![TypeScript version][ts-badge]][typescript-5-4]
   [![Node.js version][nodejs-badge]][nodejs]
 
 </div>
 
-# 🚀 Technologies
+# Formula One API
 
-This code source was developed with the following items:
+Este é um projeto de API para fornecer informações sobre equipes e pilotos de Fórmula 1.
 
-### 📦 Dependencies
+## 🚀 Tecnologias
 
-- [typescript][typescript-npm] - Superset for application scale JavaScript development
-- [tsx][tsx-npm] - TypeScript Execute (tsx): Enable Node.js to run TypeScript
-- [tsup][tsup-npm] - Bundle your TypeScript library with no config, powered by esbuild
-- [@types/node][@types/node-npm] - type definitions for node
+Este código fonte foi desenvolvido com os seguintes itens:
 
-# Credits
+### 📦 Dependências
 
-icons by [Pino Lamanna][dribble-icon]
+- [typescript][typescript-npm] - Superset para desenvolvimento em escala de aplicação JavaScript
+- [tsx][tsx-npm] - TypeScript Execute (tsx): Permite que o Node.js execute TypeScript
+- [tsup][tsup-npm] - Empacote sua biblioteca TypeScript sem configuração, alimentado por esbuild
+- [@types/node][@types/node-npm] - Definições de tipo para node
+- [fastify][fastify-npm] - Framework web rápido e de baixo overhead para Node.js
+- [@fastify/cors][fastify-cors-npm] - Plugin CORS para Fastify
+
+## 📚 Endpoints
+
+### Equipes
+
+- `GET /teams` - Retorna a lista de todas as equipes de Fórmula 1.
+
+### Pilotos
+
+- `GET /drivers` - Retorna a lista de todos os pilotos de Fórmula 1.
+- `GET /drivers/:id` - Retorna informações sobre um piloto específico com base no ID.
+
+## 🛠️ Scripts
+
+- `npm run dist` - Compila o código TypeScript para JavaScript.
+- `npm run dev` - Inicia o servidor em modo de desenvolvimento.
+- `npm run watch` - Observa mudanças no código e reinicia o servidor automaticamente.
+- `npm run start:dist` - Compila o código e inicia o servidor a partir do código compilado.
+
+## 📄 Licença
+
+Este projeto está licenciado sob a licença ISC.
+
+## Créditos
+
+Ícones por [Pino Lamanna][dribble-icon]
 
 [typescript]: https://www.typescriptlang.org/
 [typescript-5-4]: https://www.typescriptlang.org/
@@ -43,3 +58,5 @@ icons by [Pino Lamanna][dribble-icon]
 [tsx-npm]: https://www.npmjs.com/package/tsx
 [tsup-npm]: https://www.npmjs.com/package/tsup
 [@types/node-npm]: https://www.npmjs.com/package/@types/node
+[fastify-npm]: https://www.npmjs.com/package/fastify
+[fastify-cors-npm]: https://www.npmjs.com/package/@fastify/cors
